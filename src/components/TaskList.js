@@ -15,12 +15,7 @@ const dispatch=useDispatch()
     dispatch(setSelectedTask(task))
   };
   const deleteTask = (task) => {
-    if(prompt('Are you sure you want to delete')){
         dispatch(removeTaskFromList(task))
-    }
-    else{
-        return
-    }
   };
   return (
     <>
